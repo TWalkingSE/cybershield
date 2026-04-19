@@ -1,0 +1,82 @@
+name: "Bug / Informação incorreta"
+description: Reporte um erro no conteúdo, link quebrado, dado desatualizado ou comportamento inesperado dos skills.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por contribuir! Antes de prosseguir, confirme:
+        - Não é um problema de segurança sensível (se for, use o canal privado em `SECURITY.md`).
+        - Já buscou issues existentes antes de abrir esta.
+
+  - type: dropdown
+    id: categoria
+    attributes:
+      label: Categoria
+      options:
+        - Link quebrado ou incorreto
+        - Informação desatualizada (versão, política, auditoria)
+        - Alerta de incidente ausente em ferramenta catalogada
+        - Erro em instrução de skill (SKILL.md)
+        - Erro em AGENTS.md / README.md / CLAUDE.md / .cursorrules
+        - Comportamento inesperado do agente ao usar um skill
+        - Outro
+    validations:
+      required: true
+
+  - type: input
+    id: arquivo
+    attributes:
+      label: Arquivo afetado
+      description: Caminho relativo no repositório (ex.`.github/skills/cybershield-kb/references/rede-anonimato.md`).
+      placeholder: .github/skills/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição do problema
+      description: Explique o que está errado e por quê. Inclua trechos relevantes.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidencias
+    attributes:
+      label: Evidências / Fontes
+      description: |
+        Links para auditorias, CVEs, documentação oficial, notícias confiáveis.
+        Se a afirmação envolver uma ferramenta, aponte a fonte primária.
+      placeholder: |
+        - https://...
+        - CVE-XXXX-YYYY
+    validations:
+      required: false
+
+  - type: dropdown
+    id: ide
+    attributes:
+      label: IDE / ferramenta usada (se aplicável)
+      options:
+        - "Não se aplica (problema de conteúdo)"
+        - VS Code + GitHub Copilot
+        - Google Antigravity
+        - Windsurf (Cascade)
+        - Cursor
+        - Claude Code
+        - GitHub Copilot CLI
+        - Kiro
+        - Outra
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: Li `CONTRIBUTING.md` e `SECURITY.md`.
+          required: true
+        - label: Este relato não contém dados sensíveis nem credenciais.
+          required: true

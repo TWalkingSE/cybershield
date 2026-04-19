@@ -1,0 +1,72 @@
+name: "Novo skill / melhoria em skill existente"
+description: Proponha um novo skill ou mudanças em um já existente (arquivos em `.github/skills/`).
+labels: ["skill", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Releia `CONTRIBUTING.md` antes de abrir. Skills seguem o padrão aberto
+        Agent Skills (frontmatter com `name` e `description` + corpo em
+        carregamento progressivo).
+
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de proposta
+      options:
+        - Novo skill
+        - Melhoria em skill existente
+    validations:
+      required: true
+
+  - type: input
+    id: nome_skill
+    attributes:
+      label: Nome do skill (slug)
+      description: "Use kebab-case (ex.: `privacidade-ia`, `hardening`)."
+      placeholder: nome-do-skill
+    validations:
+      required: true
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição / escopo
+      description: O que o skill faz, quando o agente deve ativá-lo, quais perguntas de usuário ele responde.
+    validations:
+      required: true
+
+  - type: textarea
+    id: estrutura
+    attributes:
+      label: Estrutura proposta
+      description: |
+        Liste os arquivos que pretende criar/alterar.
+        Exemplo:
+        - `.github/skills/meu-skill/SKILL.md`
+        - `.github/skills/meu-skill/references/exemplo.md`
+        - Wrappers em `.windsurf/skills/meu-skill/` e `.claude/skills/meu-skill/`
+    validations:
+      required: true
+
+  - type: textarea
+    id: justificativa
+    attributes:
+      label: Por que adicionar?
+      description: Qual lacuna esse skill preenche? Qual o ganho para o usuário final?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: O escopo do skill respeita o framework TCP/IP e o princípio de defense in depth.
+          required: true
+        - label: O conteúdo planejado está em português brasileiro.
+          required: true
+        - label: Pretendo criar wrappers em `.windsurf/skills/` e `.claude/skills/` se necessário.
+          required: true
+        - label: Atualizarei a tabela de skills no `README.md` e a lista em `AGENTS.md`.
+          required: true

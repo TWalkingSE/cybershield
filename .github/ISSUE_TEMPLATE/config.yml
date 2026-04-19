@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Reportar problema de segurança (privado)
+    url: https://github.com/TWalkingSE/cybershield/security/advisories/new
+    about: Para vulnerabilidades, recomendações inseguras ou prompt injection, use o canal privado de Security Advisories. Não abra issue pública com detalhes sensíveis.
+  - name: Perguntas e discussões gerais
+    url: https://github.com/TWalkingSE/cybershield/discussions
+    about: Dúvidas de uso, ideias abertas e conversas sobre segurança digital no geral.

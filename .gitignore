@@ -1,0 +1,168 @@
+# ============================================================================
+# CyberShield — .gitignore
+# Projeto baseado em Markdown/instruções; regras abrangentes para evitar
+# commit acidental de artefatos locais de editores, IDEs agentic e SOs.
+# ============================================================================
+
+# ---------------------------------------------------------------------------
+# Sistemas operacionais
+# ---------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.stackdump
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.VolumeIcon.icns
+
+# Linux
+*~
+.nfs*
+.directory
+.Trash-*
+
+# ---------------------------------------------------------------------------
+# Editores / IDEs genéricos
+# ---------------------------------------------------------------------------
+# VS Code (mantém configurações compartilhadas se houver; ignora locais)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim / Neovim
+*.swp
+*.swo
+*.swn
+Session.vim
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+.\#*
+.emacs.desktop
+.emacs.desktop.lock
+
+# Sublime Text
+*.sublime-workspace
+
+# ---------------------------------------------------------------------------
+# IDEs agentic / ferramentas de IA (caches e estado local, NÃO conteúdo versionado)
+# ---------------------------------------------------------------------------
+# O conteúdo dos skills em .github/skills, .windsurf/skills e .claude/skills
+# deve ser versionado. Apenas caches, logs e memórias locais ficam fora.
+.windsurf/cache/
+.windsurf/logs/
+.windsurf/state/
+.claude/cache/
+.claude/logs/
+.claude/state/
+.cursor/cache/
+.cursor/logs/
+.aider*
+.copilot/
+.github-copilot/
+
+# ---------------------------------------------------------------------------
+# Variáveis de ambiente e segredos
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+secrets.json
+secrets.yaml
+secrets.yml
+
+# ---------------------------------------------------------------------------
+# Node.js (caso scripts futuros usem npm/pnpm/yarn)
+# ---------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.npm/
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# ---------------------------------------------------------------------------
+# Python (caso scripts futuros automatizem verificação de skills)
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+coverage.xml
+htmlcov/
+
+# ---------------------------------------------------------------------------
+# Logs, temporários e backups
+# ---------------------------------------------------------------------------
+*.log
+logs/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+
+# ---------------------------------------------------------------------------
+# Artefatos de build genéricos
+# ---------------------------------------------------------------------------
+out/
+target/
+.cache/

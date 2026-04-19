@@ -1,5 +1,12 @@
 # CyberShield — Assistente de Segurança Digital e Privacidade
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![AGENTS.md](https://img.shields.io/badge/AGENTS.md-compatible-blue)](https://agents.md)
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-10-7c3aed)](.github/skills)
+[![Knowledge Base](https://img.shields.io/badge/KB-60%20categorias-0ea5e9)](.github/skills/cybershield-kb)
+[![Language](https://img.shields.io/badge/Idioma-PT--BR-009c3b)](#)
+[![Last Commit](https://img.shields.io/github/last-commit/TWalkingSE/cybershield)](https://github.com/TWalkingSE/cybershield/commits/main)
+
 > Instruções, skills e base de conhecimento que transformam qualquer IDE com modo agente em um consultor especialista de segurança digital, privacidade online e anonimato na internet.
 
 ## O que é
@@ -71,11 +78,19 @@ Para usar um skill específico, digite `/nome-do-skill` no chat:
 ```
 cybershield/
 ├── README.md
+├── LICENSE                                # Licença MIT
+├── CHANGELOG.md                           # Histórico de versões (Keep a Changelog)
+├── CONTRIBUTING.md                        # Guia de contribuição
+├── CODE_OF_CONDUCT.md                     # Contributor Covenant 2.1
+├── SECURITY.md                            # Política de reporte de problemas
+├── .gitignore
 ├── AGENTS.md                              # Identidade e regras (padrão universal)
 ├── CLAUDE.md                              # Ajustes específicos para Claude
 ├── .cursorrules                           # Resumo de regras para Cursor
 ├── .github/                               # Arquivos canônicos (universal)
 │   ├── copilot-instructions.md            # Regras gerais do projeto
+│   ├── ISSUE_TEMPLATE/                    # Templates de issue (bug, KB, skill)
+│   ├── PULL_REQUEST_TEMPLATE.md
 │   ├── prompts/
 │   │   └── cybershield-menu.prompt.md     # Menu interativo
 │   └── skills/                            # Skills canônicos (conteúdo completo)

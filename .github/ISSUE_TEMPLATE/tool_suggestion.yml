@@ -1,0 +1,136 @@
+name: "Sugerir ferramenta para a base de conhecimento"
+description: Proponha uma nova ferramenta de segurança/privacidade para ser avaliada e eventualmente catalogada.
+labels: ["kb", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de abrir, releia as regras em `CONTRIBUTING.md`. Rejeitamos
+        ferramentas com histórico grave de incidentes não divulgado, sem
+        manutenção ativa ou proprietárias sem auditoria externa em categorias
+        sensíveis (VPN, mensageria, criptografia).
+
+  - type: input
+    id: nome
+    attributes:
+      label: Nome da ferramenta
+    validations:
+      required: true
+
+  - type: input
+    id: site
+    attributes:
+      label: Link oficial (https)
+      description: Domínio oficial — atenção a typosquatting.
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: categoria
+    attributes:
+      label: Categoria sugerida
+      description: Corresponde a um dos arquivos em `.github/skills/cybershield-kb/references/`.
+      options:
+        - autenticacao-senhas
+        - comunicacao
+        - dados-criptografia
+        - investigacao-educacao
+        - navegadores-busca
+        - produtividade-midia
+        - protecao-endpoint
+        - rede-anonimato
+        - sistemas-plataformas
+        - Outra / não tenho certeza
+    validations:
+      required: true
+
+  - type: dropdown
+    id: opensource
+    attributes:
+      label: É open-source?
+      options:
+        - "Sim"
+        - "Não"
+        - "Parcial / núcleo open-source, serviço proprietário"
+        - "Não sei"
+    validations:
+      required: true
+
+  - type: input
+    id: licenca
+    attributes:
+      label: Licença (se aplicável)
+      placeholder: "ex.: GPLv3, MIT, Apache 2.0"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: plataformas
+    attributes:
+      label: Plataformas suportadas
+      options:
+        - label: Windows
+        - label: macOS
+        - label: Linux
+        - label: Android
+        - label: iOS
+        - label: Web
+
+  - type: dropdown
+    id: camada
+    attributes:
+      label: Camada TCP/IP em que atua
+      options:
+        - "4 — Aplicação"
+        - "3 — Transporte"
+        - "2 — Internet"
+        - "1 — Acesso à Rede"
+        - "Transversal (SO, hardware, hardening)"
+        - "Não sei"
+    validations:
+      required: true
+
+  - type: textarea
+    id: diferencial
+    attributes:
+      label: Diferencial
+      description: Por que essa ferramenta merece entrar? O que ela faz melhor que alternativas já catalogadas?
+    validations:
+      required: true
+
+  - type: textarea
+    id: auditoria
+    attributes:
+      label: Auditorias independentes (links e data)
+      description: |
+        Auditorias recentes fortalecem a inclusão.
+        Se não houver, escreva "nenhuma que eu conheça".
+      placeholder: |
+        - Cure53 (2024): https://...
+    validations:
+      required: true
+
+  - type: textarea
+    id: incidentes
+    attributes:
+      label: Alertas de incidentes conhecidos
+      description: |
+        **Campo obrigatório.** Omissão de histórico negativo é motivo para
+        rejeitar a sugestão. Se não houver incidentes, escreva "nenhum conhecido".
+      placeholder: |
+        - 2022: vazamento de cofres (link)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: Li `CONTRIBUTING.md`.
+          required: true
+        - label: Verifiquei que a ferramenta ainda é mantida ativamente.
+          required: true
+        - label: O link oficial confere e não é typosquatting.
+          required: true
