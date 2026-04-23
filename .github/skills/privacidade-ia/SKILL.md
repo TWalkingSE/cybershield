@@ -21,6 +21,9 @@ description: >
 3. **Metadados**: horários, frequência, IP, dispositivo — rastreáveis mesmo sem ler conteúdo
 4. **Vazamento em prompts**: dados sensíveis inseridos em prompts podem persistir no sistema
 5. **Integração com ecossistema**: plugins/extensões podem enviar dados para terceiros
+6. **RAG com dados sensíveis**: ao usar IA com seus próprios documentos (ChatGPT com uploads, Claude Projects, Copilot com workspace), os arquivos são enviados ao provedor e podem ser indexados
+7. **Plugins e ferramentas de IA**: ChatGPT Actions, Claude Tools e Copilot Extensions podem chamar APIs externas com seu contexto — cada plugin é uma superfície de ataque adicional
+8. **Memory / personalização**: serviços com memória persistente (ChatGPT Memory, Gemini) acumulam perfil detalhado do usuário ao longo do tempo
 
 ## Recomendações por Nível
 

@@ -76,3 +76,27 @@ Solicito confirmação da exclusão no prazo legal de 15 dias.
 Atenciosamente,
 [Nome]
 ```
+
+## Template de Solicitação GDPR
+
+```
+Assunto: Request for Erasure of Personal Data — GDPR Article 17
+
+Dear Data Protection Officer,
+
+Pursuant to Article 17 of the General Data Protection Regulation 
+(EU) 2016/679, I hereby request the erasure of all personal data 
+you hold about me.
+
+Identification data:
+- Full name: [your name]
+- Email address: [email]
+- Account/username (if applicable): [username]
+
+Please confirm the deletion within 30 days as required by the GDPR.
+
+Yours sincerely,
+[Name]
+```
+
+> Se a empresa não responder no prazo, registre uma reclamação na autoridade supervisora do seu país (ex: CNIL — França, ICO — Reino Unido, ANPD — Brasil).

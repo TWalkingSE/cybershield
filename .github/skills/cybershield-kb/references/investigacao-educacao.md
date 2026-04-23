@@ -45,7 +45,7 @@
 | **Sparrow Wallet** | ✅ Sim | Windows, macOS, Linux | Bitcoin-only, foco em privacidade, suporte a CoinJoin |
 | **Electrum** | ✅ Sim | Windows, macOS, Linux, Android | Bitcoin-only, leve, suporte a hardware wallets |
 | **Wasabi Wallet** | ✅ Sim | Windows, macOS, Linux | Bitcoin com CoinJoin nativo (WabiSabi) |
-| **Samourai Wallet** | ✅ Sim | Android | Bitcoin com Whirlpool CoinJoin, Stonewall, Stowaway |
+| **Samourai Wallet** | ⚠️ Comprometido | Android | Bitcoin com Whirlpool CoinJoin — ⚠️ ALERTA: Fundadores presos pelo DOJ (EUA) em abril 2024, servidor Whirlpool apreendido. Uso desaconselhado. Use Sparrow Wallet com Whirlpool local, se disponível. |
 | **BlueWallet** | ✅ Sim | Android, iOS, Desktop | Bitcoin + Lightning, multi-carteira |
 | **Zeus LN** | ✅ Sim | Android, iOS | Cliente para nó Lightning próprio |
 | **Phoenix Wallet** | ✅ Sim | Android, iOS | Lightning self-custodial, abertura automática de canais |

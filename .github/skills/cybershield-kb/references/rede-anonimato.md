@@ -188,7 +188,7 @@
 | **Libreswan** | ✅ Sim | IPsec | Fork de Openswan | https://libreswan.org/ |
 | **PiVPN** | ✅ Sim | Wrapper | Setup automatizado WireGuard/OpenVPN em Linux | https://www.pivpn.io/ |
 | **Algo VPN** | ✅ Sim | Provisionador | Provisiona VPN WireGuard em VPS automaticamente | https://github.com/trailofbits/algo |
-| **Streisand** | ✅ Sim | Provisionador | Provisiona múltiplos protocolos anti-censura | https://github.com/StreisandEffect/streisand |
+| **Streisand** | ⚠️ Legado | Provisionador | ⚠️ Projeto arquivado no GitHub (sem atualizações de segurança). Use Algo VPN como alternativa. | https://github.com/StreisandEffect/streisand |
 | **Outline Server** | ✅ Sim | Shadowsocks | Servidor Shadowsocks gerenciado (Jigsaw) | https://getoutline.org/ |
 | **SoftEther** | ✅ Sim | Multi-proto | Suporta L2TP/IPsec/SSTP/OpenVPN/SoftEther | https://www.softether.org/ |
 | **Tailscale** | Parcial | Mesh | Rede mesh sobre WireGuard (controle plano fechado) | https://tailscale.com/ |

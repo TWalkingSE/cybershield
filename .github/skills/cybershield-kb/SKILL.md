@@ -33,6 +33,7 @@ description: >
 | Sistemas operacionais seguros, VMs, privacidade Android, privacidade iOS | `sistemas-plataformas.md` | §11, §20, §31, §32 |
 | Metadados, fotos, notas, calendários, office, PDF, tradutores, mídia, redes sociais alternativas, mapas, saúde, RSS, acesso remoto | `produtividade-midia.md` | §14, §22, §26, §36, §39-45, §50-52, §58 |
 | Anti-phishing, criptoativos, OSINT, data brokers, IA/LLMs, forense, pós-quântica, educação em segurança | `investigacao-educacao.md` | §15, §18, §19, §34, §37, §47, §54, §60 |
+| IoT (Internet of Things), câmeras IP, assistentes de voz, smart TV, segurança física, RFID, rastreadores | `iot-seguranca-fisica.md` | §61, §62 |
 
 ## Alertas Conhecidos (verificar antes de recomendar)
 

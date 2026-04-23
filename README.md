@@ -2,8 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![AGENTS.md](https://img.shields.io/badge/AGENTS.md-compatible-blue)](https://agents.md)
-[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-10-7c3aed)](.github/skills)
-[![Knowledge Base](https://img.shields.io/badge/KB-60%20categorias-0ea5e9)](.github/skills/cybershield-kb)
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-15-7c3aed)](.github/skills)
+[![Knowledge Base](https://img.shields.io/badge/KB-62%20categorias-0ea5e9)](.github/skills/cybershield-kb)
 [![Language](https://img.shields.io/badge/Idioma-PT--BR-009c3b)](#)
 [![Last Commit](https://img.shields.io/github/last-commit/TWalkingSE/cybershield)](https://github.com/TWalkingSE/cybershield/commits/main)
 
@@ -17,8 +17,8 @@ O projeto utiliza o padrão aberto **Agent Skills**, compatível com múltiplas 
 
 ### O que está incluso
 
-- **60 categorias** de ferramentas de privacidade e segurança catalogadas
-- **10 agent skills** com instruções detalhadas para tarefas especializadas
+- **62 categorias** de ferramentas de privacidade e segurança catalogadas
+- **15 agent skills** com instruções detalhadas para tarefas especializadas
 - **Base de conhecimento** com centenas de ferramentas avaliadas (open-source, auditorias, alertas de incidentes, links oficiais)
 - **Formato universal** — funciona com qualquer LLM (GPT-5, Claude Opus, Claude Sonnet, Gemini, etc.)
 
@@ -72,6 +72,11 @@ Para usar um skill específico, digite `/nome-do-skill` no chat:
 | `/kit-privacidade` | Montar conjunto personalizado de ferramentas |
 | `/privacidade-ia` | Proteção de dados em IA e LLMs |
 | `/limpeza-digital` | Remoção de dados pessoais e pegada digital |
+| `/seguranca-fisica` | Proteção física de dispositivos, RFID, câmeras, roubo |
+| `/resposta-incidente` | Protocolo de emergência para contas invadidas e dispositivos comprometidos |
+| `/protecao-familiar` | Segurança para crianças, adolescentes e idosos |
+| `/privacidade-financeira` | Banco online, cartões virtuais, golpes Pix, CPF vazado |
+| `/checklist-viagem` | Segurança em viagens e fronteiras |
 
 ## Estrutura do projeto
 
@@ -107,7 +112,8 @@ cybershield/
 │       │       ├── produtividade-midia.md
 │       │       ├── protecao-endpoint.md
 │       │       ├── rede-anonimato.md
-│       │       └── sistemas-plataformas.md
+│       │       ├── sistemas-plataformas.md
+│       │       └── iot-seguranca-fisica.md
 │       ├── diagnostico-privacidade/SKILL.md
 │       ├── fingerprinting/SKILL.md
 │       ├── hardening/SKILL.md
@@ -115,7 +121,12 @@ cybershield/
 │       ├── limpeza-digital/SKILL.md
 │       ├── mapa-tcpip/SKILL.md
 │       ├── privacidade-ia/SKILL.md
-│       └── threat-modeling/SKILL.md
+│       ├── threat-modeling/SKILL.md
+│       ├── seguranca-fisica/SKILL.md
+│       ├── resposta-incidente/SKILL.md
+│       ├── protecao-familiar/SKILL.md
+│       ├── privacidade-financeira/SKILL.md
+│       └── checklist-viagem/SKILL.md
 ├── .windsurf/                             # Compatibilidade Cascade / Windsurf
 │   ├── rules/
 │   │   └── cybershield.md                 # Regras sempre ativas no Cascade

@@ -70,7 +70,7 @@
 | **CounterMail** | ❌ Não | ✅ Nativo | Suécia | OpenPGP forte, servidores diskless, jurisdição sueca | https://countermail.com/ |
 | **Disroot** | ✅ Sim | ✅ (PGP) | Holanda | Coletivo sem fins lucrativos, ecossistema completo (mail, cloud, pad) | https://disroot.org/ |
 | **Riseup** | ✅ Sim | ✅ | EUA (ativismo) | Provedor para ativistas, requer convite, sem logs | https://riseup.net/ |
-| **Skiff Mail** | ✅ Sim | ✅ Nativo | EUA | E2EE, integração com web3 (⚠️ adquirido pela Notion em 2024 — status incerto) | https://skiff.com/ |
+| **Skiff Mail** | ⚠️ Descontinuado | ⚠️ Encerrado | EUA | ⚠️ ALERTA: Adquirido pela Notion em fevereiro 2024 e encerrado em abril 2024. Não use. Alternativa: Tuta ou Proton Mail. | https://skiff.com/ |
 | **Soverin** | ❌ Não | ⚠️ | Holanda | Foco simplicidade + domínio próprio | https://soverin.net/ |
 | **Runbox** | ❌ Não | ⚠️ (TLS) | Noruega | 100% energia renovável, jurisdição forte | https://runbox.com/ |
 | **Kolab Now** | ✅ Sim | ⚠️ (TLS) | Suíça | Suite colaborativa (mail/cal/contacts/files) | https://kolabnow.com/ |

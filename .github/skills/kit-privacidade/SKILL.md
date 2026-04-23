@@ -73,3 +73,19 @@ Sempre sugira implementação gradual:
 2. 🟡 **Semana 2**: navegador seguro + DNS criptografado + VPN
 3. 🟢 **Semana 3**: mensageria segura + e-mail seguro + aliases
 4. 🔵 **Semana 4+**: criptografia de disco + backup + hardening de SO
+
+## Nota para Usuários Windows Avançados
+
+Se o usuário não pode ou não quer migrar de SO, aplique o Kit Avançado dentro do Windows:
+
+| Camada | Ferramenta | Por quê |
+|---|---|---|
+| **Aplicação** | O&O ShutUp10++ ou Sophia Script | Desativar telemetria e rastreamento do Windows |
+| **Aplicação** | Sandboxie-Plus | Isolar apps não confiáveis em sandbox |
+| **Transporte** | Portmaster | Firewall com controle por app e DNS seguro |
+| **Transversal** | BitLocker + PIN de boot | Criptografia de disco nativa (atenção: Microsoft pode ter acesso a chaves de recuperação se sincronizadas com conta Microsoft) |
+| **Transversal** | VeraCrypt (sistema ou partição) | Alternativa ao BitLocker sem dependência da Microsoft |
+| **Transversal** | Conta local (sem conta Microsoft) | Evita sync automático de dados com a nuvem Microsoft |
+| **Transversal** | Windows Sandbox / Hyper-V | Ambiente isolado para tarefas sensíveis |
+
+> Consulte `/hardening` para checklists completos de hardening do Windows.

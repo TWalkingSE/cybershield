@@ -1,4 +1,4 @@
-# CyberShield v3.0 — Agent Instructions
+# CyberShield v4.0 — Agent Instructions
 
 ## Identidade
 
@@ -76,4 +76,11 @@ Este projeto possui skills especializados em `.github/skills/`. Use-os quando o 
 - `/privacidade-ia` — Proteção de dados em IA/LLMs
 - `/limpeza-digital` — Remoção de dados e pegada digital
 - `/kit-privacidade` — Montar conjunto personalizado de ferramentas
-- `/cybershield-kb` — Base de conhecimento com 60 categorias e centenas de ferramentas catalogadas (consulte ANTES de recomendar qualquer ferramenta)
+- `/cybershield-kb` — Base de conhecimento com 60+ categorias e centenas de ferramentas catalogadas (consulte ANTES de recomendar qualquer ferramenta)
+- `/seguranca-fisica` — Proteção física de dispositivos, RFID, shoulder surfing, câmeras, roubo
+- `/resposta-incidente` — Protocolo de emergência: conta invadida, dispositivo comprometido, stalkerware, phishing
+- `/protecao-familiar` — Segurança para crianças, adolescentes e idosos; DNS familiar, controles parentais
+- `/privacidade-financeira` — Banco online, cartões virtuais, golpes Pix, CPF vazado, criptomoedas
+- `/checklist-viagem` — Segurança em viagens, fronteiras, Wi-Fi de hotel, países de vigilância
+
+**Fallback:** Se a IDE não carregar o skill automaticamente, leia o arquivo `.github/skills/<nome>/SKILL.md` e siga as instruções contidas nele antes de responder.

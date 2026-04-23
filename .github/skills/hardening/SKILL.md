@@ -73,3 +73,9 @@ Organize em 3 níveis de prioridade:
 - Crítico: WPA3, senha forte do admin, firmware atualizado, desativar WPS
 - Recomendado: Pi-hole/AdGuard Home, DNS criptografado no roteador, guest network
 - Avançado: OpenWrt/pfSense, VLAN para IoT, IDS/IPS, segmentação de rede
+
+### Roteador Mesh (Eero, Google Nest, TP-Link Deco, Orbi)
+- Crítico: atualizar firmware, trocar credenciais padrão, verificar se o app tem obrigação de conta na nuvem
+- Recomendado: desativar coleta de dados/telemetria nas configurações do app, usar DNS criptografado no róter primário, isolar IoT em SSID separado
+- Avançado: avaliar substituição por OpenWrt com firmware de terceiros (se compatível), ou usar mesh proprietário atrás de pfSense/OPNsense para inspecão de tráfego
+- ⚠️ **Risco**: Muitos roteadores mesh enviam logs e estatísticas de uso para servidores do fabricante. Verifique a política de privacidade antes de instalar.
